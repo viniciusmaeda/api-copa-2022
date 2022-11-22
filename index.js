@@ -1,5 +1,6 @@
-// importar o módulo express
+// importação dos módulos necessário para o projeto
 const express = require("express");
+const mongoose = require("mongoose");
 
 // instanciar o módulo express
 const app = express();
@@ -12,6 +13,13 @@ const teamRoutes = require("./routes/Team");
 app.use("/group", groupRoutes);
 app.use("/team", teamRoutes);
 
-// número da porta em que o servidor irá rodar
-const port = 3000;
-app.listen(port, console.log(`Servidor rodando na porta ${port}`));
+// conexão com o banco de dados MongoDB (Atlas)
+mongoose
+  .connect("")
+  .then(() => {
+    console.log("Database connected!");
+    app.listen(3000);
+  })
+  .catch((err) => {
+    console.log(err);
+  });

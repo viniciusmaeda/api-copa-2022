@@ -6,7 +6,7 @@ const routes = express.Router();
 
 // GET - Obter os dados dos times
 routes.get("/", (req, res) => {
-  res.send("Dados dos times...");
+  res.send("Esta rota irá retornar os times.");
 });
 
 // exportar as rotas para veículo
