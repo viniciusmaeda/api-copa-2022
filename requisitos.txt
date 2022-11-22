@@ -1,0 +1,14 @@
+LP4
+API Rest (CRUD) - Copa do Mundo de Futebol 2022
+Times (teams)
+- Nome
+- ID (ISO 3166)
+Grupos (groups)
+- Times
+- Partidas
+- Pontuações ??? (ptos, gols, partidas)
+Github
+- criar um repositório
+Rotas
+- teams
+- groups
