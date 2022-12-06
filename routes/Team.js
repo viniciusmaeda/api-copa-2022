@@ -38,5 +38,9 @@ routes.post("/", async (req, res) => {
   }
 });
 
+// PUT - updateOne()
+
+// DELETE - deleteOne()
+
 // exportar as rotas para veículo
 module.exports = routes;
